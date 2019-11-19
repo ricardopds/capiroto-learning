@@ -5,8 +5,8 @@ Web service RESTful that returns, from a previous csv file, the producer that re
 
 (1) Run the Web Service Application
 
-1.1 - Add the movie project to your workspace.
-1.2 - Click with the right button on your project and go to: Run As->Run on Server.
+**1.1** - Add the movie project to your workspace.
+**1.2** - Click with the right button on your project and go to: Run As->Run on Server.
 1.3 - Selects the server type, for this example I will be using the TomCat v9.0 Server.
 1.3.1 - Define the server's host name, the default is 'localhost'.
 1.3.2 - Define the server's name, the default is 'Tomcat v9.0 Server at localhost'.
@@ -16,7 +16,7 @@ Web service RESTful that returns, from a previous csv file, the producer that re
 1.3.6 - Add the project to the 'Configured' selection for the server resources.
 1.3.7 - Click on 'Finish'.
 1.3.8 - Open the browser on the following URL: http://localhost:8080/movie/producers. This URL will list the producer with the minimum interval between two awards winning and the one with the maximum interval. You will receive the following JSON:
-'{
+{
     "min": [
         {
             "followingWin": 1991,
@@ -32,8 +32,8 @@ Web service RESTful that returns, from a previous csv file, the producer that re
             "previousWin": 2002,
             "producer": "Matthew Vaughn"
         }
-    ]
-'}
+	        ]
+}
 1.3.9 - Use the http verbes to manage the producers on that list:
   -GET, movie/producers: List the producer with the minimum interval between two awards winning and the one with the maximum interval.
   -GET, movie/producers/{name}: Returns the producers data.
